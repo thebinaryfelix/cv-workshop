@@ -4,10 +4,25 @@
     border: 1px solid red;
 }
 
-body{
+body, h1, h2, h3, h4, h5, h6, p{
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto-Mono', monospace;
+}
+
+code{
+    background-color: rgb(230, 230, 230);
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: 800;
+}
+
+section{
+    font-family: 'Roboto-Mono', monospace;
+}
+
+section li{
+    margin-bottom: 0.8rem;
 }
 
 .section-title{
