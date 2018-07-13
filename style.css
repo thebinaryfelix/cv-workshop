@@ -1,38 +1,58 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,500i,700,700i,900');
+/* 
+    Electric blue:............#2DC5FA
+    Dark blue:................#2D354C
+    Soft black:...............#181B23
+    Ruby:.....................#EC3A35
+    Orange:...................#F78F32
+    Soft yellow:..............#FFD26F
+    Deep blue:................#008B9C
+    Soft green:...............#72C0BC
+    Soft red:.................#F67373
+    Grey:.....................#6E737C
+*/
 
-.btest{
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,500i,700,700i,900');
+.btest {
     border: 1px solid red;
 }
 
-body, h1, h2, h3, h4, h5, h6, p{
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     margin: 0;
     padding: 0;
     font-family: 'Roboto-Mono', monospace;
 }
 
-code{
+code {
     background-color: rgb(230, 230, 230);
     padding: 5px;
     border-radius: 5px;
     font-weight: 800;
 }
 
-section{
+section {
     font-family: 'Roboto-Mono', monospace;
+    margin-top: 20px;
 }
 
-section li{
+section li {
     margin-bottom: 0.8rem;
 }
 
-.section-title{
+.section-title {
     background-color: #2DC5FA;
     border-radius: 8px;
     padding: 3px;
     color: #2D354C;
 }
 
-.instruction-img{
+.instruction-img {
     width: 100%;
     margin-bottom: 10px;
     border: 5px solid #2DC5FA;
