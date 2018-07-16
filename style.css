@@ -107,6 +107,12 @@ section li {
     margin-bottom: 10px;
 }
 
+xmp{
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow: scroll;
+}
+
 .copy-btn:focus {
     outline: 0;
 }
@@ -116,9 +122,4 @@ section li {
     padding: 10px;
     background-color: rgb(245, 245, 245);
     overflow: scroll;
-}
-
-.bootstrap-example {
-    width: 100%;
-    word-wrap: break-word;
 }

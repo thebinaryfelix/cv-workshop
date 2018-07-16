@@ -74,13 +74,16 @@
                 <li>To use this image,
                     <strong>click</strong> on it and after downloading, move it to your
                     <code>images</code> folder.</li>
-                    <a href="images/profile.jpg" download><img src="images/profile.jpg" alt="Profile image" width="150px" class="resource-img"></a>
+                <a href="images/profile.jpg" download>
+                    <img src="images/profile.jpg" alt="Profile image" width="150px" class="resource-img">
+                </a>
                 <li>Next, this will be our starting code inside the
                     <code>index.html</code> file:</li>
 
                 <div class="starter-code">
                     <button class="copy-btn">
-                        <i class="far fa-copy"></i><p class="hidden" id="success-msg">Copied!</p>
+                        <i class="far fa-copy"></i>
+                        <p class="hidden" id="success-msg">Copied!</p>
                     </button>
 <xmp id="starter-code">
     <!DOCTYPE html>
@@ -92,12 +95,15 @@
     </head>
 
     <body>
+        <!-- Block #1 -->
         <h1>Homer Jay Simpson</h1>
         <p>Versitile employee, currently working at Springfield's Power Plant</p>
         <p>This can be a longer description about the person's goals</p>
 
+        <!-- Block #2 -->
         <img src="images/profile.jpg" alt="">
 
+        <!-- Block #3 -->
         <ul>
             <li>homer.simpson@gmail.com</li>
             <li>Springfield, OR - USA</li>
@@ -109,9 +115,10 @@
             <li>linkedin.com/in/homersimpson</li>
         </ul>
 
+        <!-- Block #4 -->
         <h2>EDUCATION</h2>
         <h3>High School Degree</h3>
-        <h3>Springfield High</h3>
+        <h4>Springfield High</h4>
         <p>Start Date - End Date</p>
         <p>Springfield, USA</p>
         <p>Course</p>
@@ -119,6 +126,7 @@
             <li>Completed High School while eating lots of donuts.</li>
         </ul>
 
+        <!-- Block #5 -->
         <h2>SKILLS</h2>
         <ul>
             <li>Math</li>
@@ -136,7 +144,8 @@
                 </div>
 
                 <li>For every alteration on your
-                    <code>index.html</code> or <code>style.css</code> file, you have to save it by pressing
+                    <code>index.html</code> or
+                    <code>style.css</code> file, you have to save it by pressing
                     <kbd>CTRL + S</kbd> and Reload the page with
                     <kbd>F5</kbd> or
                     <kbd>CTRL + R</kbd> to see the result.
@@ -147,24 +156,178 @@
 
     <section id="style-section" class="container p-0">
         <div class="m-auto col-xs-12 col-sm-10 col-md-10 text-center section-title">
-            <h2>3. CSS - Bootstrap</h2>
+            <h2>3. CSS - Bootstrap - Font Awesome</h2>
         </div>
         <div class="m-auto col-xs-12 col-sm-10 col-md-10">
             <ol>
-                <li>Copy the following line (click 3 times fast on any word to select all the text)</li>
-                <xmp class="bootstrap-code"><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous"></xmp>
-                <li>Paste the code you just copied inside the <code>head</code> tag in your <code>index.html</code> file.</li>
+                <li>Copy the following lines</li>
+<xmp class="bootstrap-code">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</xmp>
+                <li>
+                    Paste the code you just copied inside the
+                    <code>head</code> tag in your
+                    <code>index.html</code> file.
+                </li>
                 <li>Should be something like this:</li>
-                <xmp class="bootstrap-example">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-    <title>Homer J Simpson</title>
-</head>
-                </xmp>
+<xmp class="bootstrap-code">
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <title>Homer J Simpson</title>
+    </head>
+</xmp>
+                <li>
+                    Let's add some FontAwesome icons to Homer's profile and link it!
+                </li>
+<xmp class="bootstrap-code">
+    <!-- Block #3 -->
+    <ul>
+        <li>
+            <a href="#">
+                <i class="far fa-envelope"></i>
+                homer.simpson@gmail.com
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="fas fa-map-marker-alt"></i>
+                Springfield, OR - USA
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="fab fa-instagram"></i>
+                @homersimpson_official
+            </a>
+        </li>
+    </ul>
+
+    <ul>
+        <li>
+            <a href="#">
+                <i class="fas fa-mobile-alt"></i>
+                +1 503-655-2393
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="far fa-calendar-alt"></i>
+                May 12, 1956
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="fab fa-linkedin"></i>
+                linkedin.com/in/homersimpson
+            </a>
+        </li>
+    </ul>
+</xmp>
             </ol>
         </div>
     </section>
+
+    <section id="style-section" class="container p-0">
+        <div class="m-auto col-xs-12 col-sm-10 col-md-10 text-center section-title">
+            <h2>4. Wrap the blocks</h2>
+        </div>
+        <div class="m-auto col-xs-12 col-sm-10 col-md-10">
+            <ol>
+                <li>Wrap each block with a
+                    <code>div</code> tag</li>
+<xmp class="bootstrap-code">
+    <div>
+        <div>
+            <!-- Block #1 -->
+            <h1>Homer Jay Simpson</h1>
+            <p>Versitile employee, currently working at Springfield's Power Plant</p>
+            <p>This can be a longer description about the person's goals</p>
+        </div>
+    
+        <div>
+            <!-- Block #2 -->
+            <img src="images/profile.jpg" alt="">
+        </div>
+    
+        <div>
+            <!-- Block #3 -->
+            <div>
+                <ul>
+                    [ ... ]
+                </ul>
+            </div>
+    
+            <div>
+                <ul>
+                    [ ... ]
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <!-- Block #4 -->
+        <h2>EDUCATION</h2>
+        <h3>High School Degree</h3>
+        <h4>Springfield High</h4>
+        <p>Start Date - End Date</p>
+        <p>Springfield, USA</p>
+        <p>Course</p>
+        <ul>
+            <li>Completed High School while eating lots of donuts.</li>
+        </ul>
+    </div>
+
+    <div>
+        <!-- Block #5 -->
+        <h2>SKILLS</h2>
+        <ul>
+            <li>Math</li>
+            <li>English</li>
+            <li>Art</li>
+            <li>Biology</li>
+            <li>Chemestry</li>
+            <li>Gardening</li>
+        </ul>
+    </div>
+</xmp>
+
+                <li><strong>Attention!</strong> On block#3 put each <code>ul</code> inside a <code>div</code></li>
+                <li>Now, blocks #1, #2 and #3 all go inside another <code>div</code></li>
+            </ol>
+        </div>
+    </section>
+
+    <section id="style-section" class="container p-0">
+        <div class="m-auto col-xs-12 col-sm-10 col-md-10 text-center section-title">
+            <h2>5. Naming tags - Bootstrap classes</h2>
+        </div>
+        <div class="m-auto col-xs-12 col-sm-10 col-md-10 pt-3">
+            <p>Bootstrap has special classes for the Grid system. We'll use some of them now.</p>
+            <ul class="mt-3">
+                <li>For <strong>block#1</strong>, apply the following <strong>classes</strong> to the <code>div</code> tag: <code>block-1 col-lg-8</code></li>
+                <li>For the first <code>p</code> on <strong>block#1</strong>, apply the tag <code>high-text</code></li>
+                <li>For <strong>block#2</strong>, apply the following <strong>classes</strong> to the <code>div</code> tag: <code>block-2 col-lg-4</code></li>
+                <li>For <strong>block#3</strong>, apply the following <strong>classes</strong> to the <code>div</code> tag: <code>block-3 col-lg-8</code></li>
+            </ul>
+        </div>
+
+
+
+
+
+
+
 
     <script>
         let copyBtn = document.querySelector('.copy-btn');
@@ -179,15 +342,14 @@
                 let successful = document.execCommand('copy');
                 let msg = successful ? 'successful' : 'unsuccessful';
                 console.log('Copy email command was ' + msg);
-                if(msg == 'successful'){
+                if (msg == 'successful') {
                     let successMsg = document.getElementById("success-msg");
                     successMsg.classList.remove("hidden");
                     setTimeout(() => {
                         successMsg = document.getElementById("success-msg");
                         successMsg.classList.add("hidden");
                     }, 3000)
-                }
-                else{
+                } else {
                     let successMsg = document.getElementById("success-msg");
                     successMsg.classList.add("hidden");
                 }
